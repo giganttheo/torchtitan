@@ -46,6 +46,11 @@ DATASETS = {
         loader=partial(_load_c4_dataset, split="train"),
         text_processor=_process_c4_text,
     ),
+    "c4_local": DatasetConfig(
+        path="/home/theo/c4",
+        loader=partial(_load_c4_dataset, split="train"),
+        text_processor=_process_c4_text,
+    ),
     "c4_test": DatasetConfig(
         path="tests/assets/c4_test",
         loader=lambda path: load_dataset(path, split="train"),

@@ -10,3 +10,5 @@
 import torchtitan.models.deepseek_v3  # noqa: F401
 import torchtitan.models.llama3  # noqa: F401
 import torchtitan.models.llama3_ft  # noqa: F401
+import torchtitan.models.llama3_funnel
+
